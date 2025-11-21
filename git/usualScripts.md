@@ -21,8 +21,6 @@ git reset --hard origin/30thDev
 Resets your local branch (index + working tree) to exactly the commit that is on the remote.
 Any commits you made locally after the push are discarded.
 
-### reset local repo and discard changes
-
 ```bash
 git clean -fd
 ```
