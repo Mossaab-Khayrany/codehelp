@@ -12,11 +12,19 @@ git clone git@github.com:OEC-IDF/litiges.git
 git branch -a
 ```
 
-### check all branches local and remote
+### reset local repo and discard changes
 
 ```bash
-git fetch origin
-git reset --hard origin/$(git rev-parse --abbrev-ref HEAD)
+git reset --hard origin/30thDev
 ```
 
-This discards all local changes (staged, unstaged, untracked, ignored).
+Resets your local branch (index + working tree) to exactly the commit that is on the remote.
+Any commits you made locally after the push are discarded.
+
+### reset local repo and discard changes
+
+```bash
+git clean -fd
+```
+
+Removes any untracked files or folders that were created after your push.
