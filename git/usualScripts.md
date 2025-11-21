@@ -26,3 +26,9 @@ git clean -fd
 ```
 
 Removes any untracked files or folders that were created after your push.
+
+```bash
+git clean -fdx
+```
+
+remove ignored files you added (e.g., generated files)
